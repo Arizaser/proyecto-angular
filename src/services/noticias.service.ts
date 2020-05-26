@@ -7,7 +7,7 @@ import { AuthService } from './auth.service';
 @Injectable({
   providedIn: 'root'
 })
-export class AlumnosService {
+export class NoticiasService {
 
   public url: string;
 
@@ -19,8 +19,8 @@ export class AlumnosService {
     this.url = GLOBAL.url2;
   }
 
-  getAlumno(){
-    return this._http.get(this.url+"/alumno/'"+this.authService.getUser()+"'")
+  getNoticia(){
+    return this._http.get(this.url+"/noticiasv2")
     .pipe(map(res => res));
   }
 }

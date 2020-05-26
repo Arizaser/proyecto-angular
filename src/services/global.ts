@@ -1,3 +1,5 @@
 export var GLOBAL = {
-  url: 'http://localhost/prueba-angular'
+  url1: 'http://apiproyecto',
+  url2: 'http://localhost/prueba-angular',
+  noVerificado: true
 }

@@ -1,28 +1,26 @@
-<div id="menuLateral" class="side-nav">
-  <div id="contendor1">
-    <img src="assets/img/logo3.png" alt="icono" id="shikobaIcono">
-    <hr><hr>
-    <button class="btn btn-lg btn-google" (click)="onClickLogout()">Logout</button>
-    <hr>
-    <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
-
+<app-sidenav></app-sidenav>
+<div id="fondo">
+  <!-- <div id="preCarga" *ngIf="!alumno">
+    <div class="preloader-wrapper active">
+      <div class="spinner-layer spinner-blue-only">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div><div class="gap-patch">
+          <div class="circle"></div>
+        </div><div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <div *ngIf="alumno">
+    <h3 class="nombreAlumno">
+      {{alumno.nombre}} {{alumno.apellido1}} {{alumno.apellido2}}
+    </h3>
+    <h4 class="puntos">
+      Puntos:<div class="pulse">{{alumno.puntos}}</div>/10
+    </h4>
   </div>
-
 </div>
-
-<div id="banner" class="blue darken-3">
-  <i class="material-icons" (click)="openNav()">menu</i>
-</div>
-
-
-<div *ngIf="!alumno">
-  Cargando datos personales...
-</div>
-<div *ngIf="alumno">
-  <h3 class="nombreAlumno">
-    {{alumno.nombre}} {{alumno.apellido1}} {{alumno.apellido2}}
-  </h3>
-  <h4 class="puntos">
-    Puntos:<div class="pulse">{{alumno.puntos}}</div>/10
-  </h4>
-</div>
+<app-noticias></app-noticias>
+<app-footer></app-footer>

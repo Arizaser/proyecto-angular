@@ -18,8 +18,9 @@ export class IsLoggedGuard implements CanActivate {
 
   canActivate(): Observable<boolean> {
     return this.authService.isLogged().pipe(map(user => {
-      if (user)
-        this.router.navigate(['/home']);
+      if (user){  
+          this.router.navigate(['/home']);
+      }
       else
         return true;
     }));

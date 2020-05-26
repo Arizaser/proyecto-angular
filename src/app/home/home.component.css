@@ -31,33 +31,10 @@
   margin: 0.2em;
 }
 
-.side-nav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  text-align: center;
-  background-color: white;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 1em;
-  border: 0.5px solid gray;
-  }
-
-
-
-.side-nav a:hover {
-  color: #f1f1f1;
-}
-
-.side-nav .closebtn {
-  font-size: 36px;
-  display: block
-}
-
 #shikobaIcono{
   width: 50%;
   display: block;
-  margin: 0 auto;
+  margin: 1em auto;
 }
 
 #contendor1{
@@ -83,3 +60,14 @@
   box-shadow: 0 0 0 rgba(204,169,44, 0.4);
   animation: pulse 2s infinite;
 }
+
+
+
+.sidenav-overlay{
+  display: none !important;
+}
+
+#preCarga{
+  text-align: center;
+}
+

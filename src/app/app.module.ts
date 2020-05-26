@@ -17,6 +17,8 @@ import { AuthGuardGuard } from './guard/auth-guard.guard';
 import * as firebase from 'firebase';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './footer/footer.component';
+import { SidenavComponent } from './sidenav/sidenav.component';
+import { NoticiasComponent } from './noticias/noticias.component';
 
 
 firebase.initializeApp(environment.firebaseConfig);
@@ -26,7 +28,9 @@ firebase.initializeApp(environment.firebaseConfig);
     AppComponent,
     LoginComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    SidenavComponent,
+    NoticiasComponent
   ],
   imports: [
     BrowserModule,

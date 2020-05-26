@@ -13,7 +13,7 @@
 }
 
 .boton{
-  text-align: center; 
+  text-align: center;
   padding-top: 20px;
 }
 
@@ -22,12 +22,12 @@
   color:#fff;
 }
 
-.btn-google img{
+.btn img{
   width: 32px;
   display: inline-block;
 }
 
-.btn-google div{
+.btn div{
   display: inline-block;
 }
 
@@ -37,7 +37,7 @@
 }
 
 .logo{
-  text-align: center; 
+  text-align: center;
   padding-top: 20px;
 }
 
@@ -56,7 +56,7 @@
     background: linear-gradient(rgba(0, 0, 0, 0.856), rgba(0, 0, 0, 0.856)), url('../../assets/img/clase1.jpeg');
     background-size: cover;
   }
-  
+
   .logo-img{
     padding: 20px;
     width: 60vh;
